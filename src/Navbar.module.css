@@ -1,0 +1,32 @@
+.navbarContainer {
+  animation: slideInLeft 2s ease-out forwards;
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+  background-color: #ffffff; 
+}
+
+/* Animation keyframes */
+@keyframes slideInLeft {
+  from {
+    transform: translateX(-100%);
+    opacity: 0;
+  }
+  to {
+    transform: translateX(0);
+    opacity: 1;
+  }
+}
+
+
+.navbarContainer::after {
+  content: "";
+  position: absolute;
+  bottom: -20px;
+  left: 0;
+  width: 100%;
+  height: 40px;
+  background: #ffffff;
+  border-radius: 50% / 20px;
+  z-index: -1;
+}

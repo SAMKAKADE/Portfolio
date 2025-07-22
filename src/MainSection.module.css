@@ -1,0 +1,245 @@
+.MainColor {
+  background-color: #f8f9fa; /* Light gray */
+  width: 100%;
+  min-height: 100vh;
+}
+
+.Main {
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  animation: fadeInCenter 1s ease-in-out both;
+  padding: 2rem 1rem;
+}
+
+/* Animation keyframes */
+@keyframes fadeInCenter {
+  from {
+    opacity: 0;
+    transform: scale(0.95);
+  }
+  to {
+    opacity: 1;
+    transform: scale(1);
+  }
+}
+
+.typingWrapper {
+  display: flex;
+  flex-direction: column;
+}
+
+/* First line (no blink) */
+.typing1 {
+  font-size: 2rem;
+  white-space: nowrap;
+  overflow: hidden;
+  width: 0;
+  animation: typing1 2s steps(30, end) forwards;
+  border-right: none;
+}
+
+@keyframes typing1 {
+  from {
+    width: 0;
+  }
+  to {
+    width: 100%;
+  }
+}
+
+/* Second line (with blink) */
+.typing2 {
+  font-size: 2rem;
+  white-space: nowrap;
+  overflow: hidden;
+  border-right: 2px solid #000;
+  width: 0;
+  animation:
+    typing2 2s steps(30, end) forwards,
+    blink 0.6s step-end 4;
+  animation-delay: 2.2s, 2.2s;
+  animation-fill-mode: forwards;
+}
+
+@keyframes typing2 {
+  from {
+    width: 0;
+  }
+  to {
+    width: 100%;
+  }
+}
+
+@keyframes blink {
+  50% {
+    border-color: transparent;
+  }
+}
+
+.Section1 {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 1.25rem;
+  padding: 2rem;
+  text-align: left;
+}
+
+.Section1 h5 {
+  font-size: 1rem;
+  text-transform: uppercase;
+  color: #0d6efd;
+}
+
+.Section2 {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 2rem;
+}
+
+.Section2 img {
+  max-height: 80vh;
+  width: 100%;
+  object-fit: cover;
+  border-radius: 1rem;
+  box-shadow: 0 4px 16px rgba(0, 0, 0, 0.1);
+}
+
+/* =========== MEDIA QUERIES ============ */
+
+@media screen and (max-width: 992px) {
+  .Main {
+    flex-direction: column;
+    padding: 2rem 1rem;
+  }
+
+  .Section1,
+  .typingWrapper,
+  .btngroup {
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+  }
+
+  .typing1,
+  .typing2 {
+    font-size: clamp(24px, 6vw, 36px);
+    text-align: center;
+  }
+
+  .btngroup {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.8rem;
+  }
+
+  .btngroup a {
+    font-size: 1rem;
+  }
+
+  .Section2 img {
+    width: 100%;
+    max-height: 300px;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .typing1,
+  .typing2 {
+    font-size: clamp(22px, 5.5vw, 32px);
+  }
+
+  .btngroup a {
+    font-size: 0.85rem;
+  }
+
+  .Section2 img {
+    max-height: 250px;
+  }
+}
+
+@media screen and (max-width: 576px) {
+  .typing1,
+  .typing2 {
+    font-size: clamp(20px, 5vw, 28px);
+  }
+
+  .btngroup a {
+    font-size: 0.75rem;
+  }
+
+  .Section1 {
+    padding: 1rem;
+  }
+
+  .Section2 {
+    padding: 1rem;
+  }
+
+  .Section2 img {
+    width: 95%;
+    max-height: 220px;
+  }
+}
+
+@media screen and (max-width: 426px) {
+  .Main {
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+  }
+  .typing2{
+    font-size: 1px;
+  }
+
+  .Main h3 {
+    margin-top: 0;
+    font-size: 1rem;
+    text-align: center;
+  }
+
+  .Main h1 {
+    font-size: 1.4rem;
+    text-align: center;
+  }
+
+  .typing1,
+  .typing2 {
+    font-size: 1.2rem;
+    text-align: center;
+  }
+
+  .MainSectionButtons {
+    flex-direction: column;
+    gap: 10px;
+    align-items: center;
+    margin-top: 0.5rem;
+  }
+
+  .Section1 {
+    padding: 0.5rem 1rem;
+    gap: 0.5rem;
+  }
+
+  .Section2 {
+    padding-top: 0;
+    padding-bottom: 0;
+    margin: 0;
+  }
+
+  .Section2 img {
+    width: 100%;
+    height: auto;
+    padding: 0;
+    margin: 0 auto;
+    object-fit: contain;
+    border-radius: 0.75rem;
+    max-height: 260px;
+  }
+
+  .btngroup a {
+    font-size: 0.85rem;
+  }
+}
