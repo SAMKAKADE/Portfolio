@@ -1,17 +1,16 @@
 {
-  "homepage": "https://github.com/SAMKAKADE/Portfolio",
+ "homepage": "https://SAMKAKADE.github.io/Samarth_Portfolio",
   "name": "samarth",
   "private": true,
   "version": "0.0.0",
   "type": "module",
   "scripts": {
-    "dev": "vite",
-    "build": "vite build",
-    "lint": "eslint .",
-    "preview": "vite preview",
-    "predeploy": "npm run build",
-    "deploy": "gh-pages -d dist"
-  },
+  "dev": "vite",
+  "build": "vite build",
+  "predeploy": "npm run build",
+  "deploy": "gh-pages -d dist"
+},
+
   "dependencies": {
     "@popperjs/core": "^2.11.8",
     "aos": "^2.3.4",
