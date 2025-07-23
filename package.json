@@ -1,10 +1,10 @@
 {
- "homepage": "https://SAMKAKADE.github.io/Samarth_Portfolio",
+ "homepage": "https://samkakade.github.io/my-react-portfolio",
   "name": "samarth",
   "private": true,
   "version": "0.0.0",
   "type": "module",
-  "scripts": {
+ "scripts": {
   "dev": "vite",
   "build": "vite build",
   "predeploy": "npm run build",
