@@ -1,4 +1,5 @@
 <<<<<<< HEAD
+<<<<<<< HEAD
 # Portfolio
 This is my personal portfolio website built using HTML, CSS, React.js, Bootstrap 5, and JavaScript. The website showcases my skills, About, resume, and contact information, all on a smooth-scrolling single-page layout.
 =======
@@ -15,3 +16,6 @@ Currently, two official plugins are available:
 
 If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
 >>>>>>> 8c7c62b (first commit)
+=======
+# Portfolio
+>>>>>>> 6dc4ca1b616b45deb5b998fc1f0e72f8dc489d02
