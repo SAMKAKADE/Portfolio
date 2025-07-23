@@ -1,9 +1,9 @@
 {
+  "homepage": "https://github.com/SAMKAKADE/Portfolio",
   "name": "samarth",
   "private": true,
   "version": "0.0.0",
   "type": "module",
-  "homepage": "https://samkakade.github.io/Portfolio",
   "scripts": {
     "dev": "vite",
     "build": "vite build",
