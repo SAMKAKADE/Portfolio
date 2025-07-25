@@ -35,7 +35,7 @@ function MainSection() {
             </div>
 
             <div className="mt-4 d-flex flex-wrap gap-3 justify-content-md-start justify-content-center">
-              <a className="btn btn-outline-light" href="https://drive.google.com/drive/u/2/folders/1pV2Sor3d1mJjDkt8GkSEHpwvJ77vp-zw" download target="_blank" >Resume</a>
+              <a className="btn btn-outline-light" href="https://drive.google.com/file/d/1BuAt0qZu3BdD3Nmk2osuFxbNOXx4o4--/view?usp=drivesdk" download target="_blank" >Resume</a>
               <a className="btn btn-outline-light" href="https://github.com/SAMKAKADE" target="_blank" rel="noreferrer">GitHub</a>
             </div>
           </div>
