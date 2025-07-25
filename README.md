@@ -1,6 +1,7 @@
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 # Portfolio
 This is my personal portfolio website built using HTML, CSS, React.js, Bootstrap 5, and JavaScript. The website showcases my skills, About, resume, and contact information, all on a smooth-scrolling single-page layout.
 =======
@@ -24,3 +25,7 @@ If you are developing a production application, we recommend using TypeScript wi
 # Samarth_Kakade_Portfolio
 Samarth_Kakade_Portfolio
 >>>>>>> acd975f4e0b6c6ca5df87b352bdf6fc1dce6a9a6
+=======
+# Portfolio
+Portfolio
+>>>>>>> a3beb5155fe952a737b8f591685a3558945bfa06

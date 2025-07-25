@@ -1,5 +1,5 @@
 {
- "homepage": "https://github.com/SAMKAKADE/Samarth_Kakade_Portfolio.git",
+ "homepage": "https://samkakade.github.io/Portfolio",
  "name": "samarth",
  "private": true,
  "version": "0.0.0",
@@ -10,7 +10,7 @@
   "preview": "vite preview",
   "predeploy": "npm run build",
   "deploy": "gh-pages -d dist"
- },
+},
  "dependencies": {
   "@popperjs/core": "^2.11.8",
   "aos": "^2.3.4",
