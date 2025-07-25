@@ -1,130 +1,64 @@
 import React, { useEffect } from "react";
 import styles from "./MainSection.module.css";
-import img1 from "./images/MainSection1.png";
-import img2 from "./images/MainSection2.png";
-import { Carousel } from "bootstrap";
+import profileImg1 from "./images/MainSection1.png";
+import profileImg2 from "./images/MainSection2.png";
+import { FaEnvelope, FaPhone, FaMapMarkerAlt } from "react-icons/fa";
+import { Carousel } from "bootstrap"; 
 
 function MainSection() {
   useEffect(() => {
-    const carouselEl = document.querySelector("#mainCarousel");
+    const carouselEl = document.querySelector("#profileCarousel");
     if (carouselEl) {
       new Carousel(carouselEl, {
-        interval: 5000,
+        interval: 2000,
         ride: "carousel",
         pause: false,
+        wrap: true,
       });
     }
   }, []);
 
   return (
-    <div
-      id="mainCarousel"
-      className="carousel slide carousel-fade"
-      data-bs-ride="carousel"
-    >
-      <div className="carousel-inner">
-        <div className={`carousel-item active ${styles.MainColor}`}>
-          <div className={`container ${styles.Main}`}>
-            <div className="row">
-              <div className={`col-12 col-lg-6 ${styles.Section1}`}>
-                <h5 className="fw-bold">
-                  Crafting Digital Experiences with Code & Design
-                </h5>
-                <div className={`fw-bold ${styles.typingWrapper}`}>
-                  <h1 className={`fw-bold ${styles.typing1}`}>
-                    Hi, I am Samarth.
-                  </h1>
-                  <h1 className={`fw-bold ${styles.typing2}`}>
-                    Welcome to My Portfolio Website.
-                  </h1>
-                </div>
+    <section className={styles.mainSection}>
+      <div className="container">
+        <div className="row align-items-center">
+          {/* Left Section */}
+          <div className="col-md-6 text-white text-md-start text-center mb-5 mb-md-0">
+            <div className={styles.badge}>Hello I'm</div>
+            <h1 className={styles.name}>Samarth Kakade</h1>
+            <h4 className={styles.role}>Website Developer & Designer</h4>
 
-                <div className={`d-flex gap-2 flex-wrap ${styles.btngroup}`}>
-                  <a
-                    className="btn btn-primary"
-                    href="/Samarth_Resume.pdf"
-                    download="Samarth_Resume.pdf"
-                    target="_blank"
-                    rel="noopener noreferrer"
-                  >
-                    Resume
-                  </a>
-                  <a className="btn btn-primary" href="https://github.com/SAMKAKADE/social-links-profile-using-CSS-Animation-and-Flexbox">
-                    Github
-                  </a>
-                  <a className="btn btn-primary" href="https://www.linkedin.com/in/samarth-kakade-38228a358/">
-                    LinkedIn
-                  </a>
+            <div className={styles.contactInfo}>
+              <p><FaEnvelope /> samarthkakade11@email.com</p>
+              <p><FaPhone /> +91 - 8767715551</p>
+              <p><FaMapMarkerAlt /> Shrirampur, Maharashtra</p>
+            </div>
+
+            <div className="mt-4 d-flex flex-wrap gap-3 justify-content-md-start justify-content-center">
+              <a className="btn btn-outline-light" href="https://drive.google.com/drive/u/2/folders/1pV2Sor3d1mJjDkt8GkSEHpwvJ77vp-zw" download target="_blank" >Resume</a>
+              <a className="btn btn-outline-light" href="https://github.com/SAMKAKADE" target="_blank" rel="noreferrer">GitHub</a>
+            </div>
+          </div>
+
+          {/* Right Section - Carousel */}
+          <div className="col-md-6 text-center">
+            <div className={`${styles.imageWrapper}`}>
+              <div id="profileCarousel" className="carousel slide" data-bs-ride="carousel">
+                <div className="carousel-inner">
+                  <div className="carousel-item active">
+                    <img src={profileImg1} className={`img-fluid ${styles.profileImage}`} alt="Profile 1" />
+                  </div>
+                  <div className="carousel-item">
+                    <img src={profileImg2} className={`img-fluid ${styles.profileImage}`} alt="Profile 2" />
+                  </div>
                 </div>
-              </div>
-              <div className={`col-12 col-lg-6 ${styles.Section2}`}>
-                <img src={img1} className="img-fluid rounded" alt="Slide 1" />
               </div>
             </div>
           </div>
-        </div>
 
-        <div className={`carousel-item ${styles.MainColor}`}>
-          <div className={`container ${styles.Main}`}>
-            <div className="row">
-              <div className={`col-12 col-lg-6 ${styles.Section1}`}>
-                <h5 className="fw-bold">
-                  Crafting Digital Experiences with Code & Design
-                </h5>
-                <div className={`fw-bold ${styles.typingWrapper}`}>
-                  <h1 className={`fw-bold ${styles.typing1}`}>
-                    Hi, I am Samarth.
-                  </h1>
-                  <h1 className={`fw-bold ${styles.typing2}`}>
-                    Welcome to My Portfolio Website.
-                  </h1>
-                </div>
-
-                <div className={`d-flex gap-2 flex-wrap ${styles.btngroup}`}>
-                  <a
-                    className="btn btn-primary"
-                    href="/Samarth_Resume.pdf"
-                    download="Samarth_Resume.pdf"
-                    target="_blank"
-                    rel="noopener noreferrer"
-                  >
-                    Resume
-                  </a>
-                  <a className="btn btn-primary" href="https://github.com/SAMKAKADE/social-links-profile-using-CSS-Animation-and-Flexbox">
-                    Github
-                  </a>
-                  <a className="btn btn-primary" href="https://www.linkedin.com/in/samarth-kakade-38228a358/">
-                    LinkedIn
-                  </a>
-                </div>
-              </div>
-              <div className={`col-12 col-lg-6 ${styles.Section2}`}>
-                <img src={img2} className="img-fluid rounded" alt="Slide 2" />
-              </div>
-            </div>
-          </div>
         </div>
       </div>
-
-      <button
-        className="carousel-control-prev"
-        type="button"
-        data-bs-target="#mainCarousel"
-        data-bs-slide="prev"
-      >
-        <span className="carousel-control-prev-icon" aria-hidden="true"></span>
-        <span className="visually-hidden">Previous</span>
-      </button>
-      <button
-        className="carousel-control-next"
-        type="button"
-        data-bs-target="#mainCarousel"
-        data-bs-slide="next"
-      >
-        <span className="carousel-control-next-icon" aria-hidden="true"></span>
-        <span className="visually-hidden">Next</span>
-      </button>
-    </div>
+    </section>
   );
 }
 

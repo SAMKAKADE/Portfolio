@@ -13,12 +13,17 @@ function Skills() {
   ];
 
   return (
-    <section id="skills" data-aos="fade-up" data-aos-once="false" data-aos-delay="700">
-
+    <section
+      id="skills"
+      className={styles.skillsSection}
+      data-aos="fade-up"
+      data-aos-once="false"
+      data-aos-delay="700"
+    >
       <div className="container py-1">
-        <h6 className="text-center text-success">SKILLS</h6>
-        <h2 className="text-center fw-bold">My Skills</h2>
-        <p className="text-center text-muted mb-5">
+        <h6 className={`text-center ${styles.subHeading}`}>SKILLS</h6>
+        <h2 className={`text-center fw-bold ${styles.heading}`}>My Skills</h2>
+        <p className={`text-center mb-5 ${styles.description}`}>
           Far far away, behind the word mountains, far from the countries Vokalia and Consonantia
         </p>
 

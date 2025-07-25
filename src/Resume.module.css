@@ -1,8 +1,24 @@
 
+.resumeSection {
+  background-color: #0d1b2a;
+  color: #4da8da;
+  padding: 4rem 1rem;
+  width: 100%;
+  overflow-x: hidden;
+}
+
+
+.resumeSection .container {
+  max-width: 100%;
+  padding-left: 0;
+  padding-right: 0;
+}
+
 
 .title {
   font-weight: bold;
-  color: #2c3e50;
+  color: #4da8da;
+  text-align: center;
   position: relative;
 }
 
@@ -11,14 +27,69 @@
   display: block;
   width: 50px;
   height: 3px;
-  background-color: #e74c3c;
+  background-color: #4da8da;
   margin: 10px auto 0;
 }
+
+
+.subtitle {
+  color: #a3c9dd;
+  font-size: 1rem;
+  text-align: center;
+}
+
+.sectionHeading {
+  color: #4da8da;
+  font-weight: 600;
+  border-bottom: 1px solid #4da8da;
+  padding-bottom: 0.5rem;
+  margin-bottom: 1.5rem;
+}
+
 
 .timelineItem {
   position: relative;
   padding-left: 25px;
   margin-bottom: 2rem;
-  border-left: 2px solid #e74c3c;
+  border-left: 2px solid #4da8da;
 }
 
+.timelineItem span {
+  position: absolute;
+  left: -6px;
+  top: 0;
+  width: 12px;
+  height: 12px;
+  background-color: #4da8da;
+  border-radius: 50%;
+}
+
+.name,
+.degree,
+.company {
+  color: #ffffff;
+  font-weight: 600;
+  font-size: 1.1rem;
+}
+
+.duration {
+  font-style: italic;
+  color: #a0d8ef;
+  margin-bottom: 0.3rem;
+}
+
+.emphasis {
+  color: #cdefff;
+  font-style: italic;
+}
+
+.list {
+  padding-left: 1rem;
+  margin-top: 0.5rem;
+  color: #e0f7fa;
+  font-size: 0.95rem;
+}
+
+.list li {
+  margin-bottom: 0.3rem;
+}

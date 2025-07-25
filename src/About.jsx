@@ -6,25 +6,35 @@ import { RiMovieAiFill } from "react-icons/ri";
 
 function About() {
     return (
-        
-        <section id="about" className="container py-1" data-aos="fade-up" data-aos-once="false" data-aos-delay="700">
+        <section
+            id="about"
+            className={`container-fluid py-5 ${styles.aboutSection}`}
+            data-aos="fade-up"
+            data-aos-once="false"
+            data-aos-delay="700"
+        >
             <article className={`row ${styles.About}`}>
                 {/* Image Section */}
                 <div className={`col-12 col-md-6 col-lg-5 ${styles.Main1}`}>
-                    <img src={img1} className="img-fluid rounded" alt="About Samarth" loading="lazy" />
+                    <img
+                        src={img1}
+                        className="img-fluid rounded"
+                        alt="About Samarth"
+                        loading="lazy"
+                    />
                 </div>
 
                 {/* Content Section */}
-                <div className="col-12 col-md-6 col-lg-6 d-flex flex-column justify-content-center">
-                    <p className={styles.introText}>MY INTRO</p>
-                    <h2 className="fw-bold mb-3">About Me</h2>
-                    <p className="text-muted">
+                <div className={`col-12 col-md-6 col-lg-6 d-flex flex-column justify-content-center ${styles.content}`}>
+                    <p className={`text-center fw-bold fs-5 ${styles.introText}`}>MY INTRO</p>
+                    <h2 className={`fw-bold mb-3 text-center ${styles.whiteText}`}>About Me</h2>
+                    <p className={styles.whiteText}>
                         Hi, I'm Samarth Kakade, a BE Engineering graduate and passionate Full Stack Developer.
                         I specialize in building responsive, scalable web applications using modern technologies.
                         I enjoy turning complex problems into elegant solutions and constantly strive to improve my skills.
                     </p>
 
-                    <address className="mt-4">
+                    <address className={`mt-4 ${styles.whiteText}`}>
                         <p><strong>Name:</strong> <span className={styles.textHighlight}>Mr. Kakade Samarth Ramesh</span></p>
                         <p><strong>Date of Birth:</strong> <span className={styles.textHighlight}>July 07, 2004</span></p>
                         <p><strong>Address:</strong> <span className={styles.textHighlight}>Shirasgaon, Shrirampur</span></p>

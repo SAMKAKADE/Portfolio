@@ -1,13 +1,18 @@
+.aboutSection {
+  background-color: #0d1b2a; /* Dark navy */
+  color: #4da8da; /* Light Blue text */
+}
+
 .About {
   min-height: 100vh;
+  align-items: center;
 }
 
 .Main1 {
   display: flex;
   align-items: center;
-  justify-content: start;
+  justify-content: end;
 }
-
 
 .Main1 img {
   height: 90vh;
@@ -17,19 +22,24 @@
 .introText {
   letter-spacing: 2px;
   font-weight: bold;
-  color: #8a9672;
+  color: #4da8da; /* Light Blue */
+}
+
+.whiteText {
+  color: #ffffff; /* Heading stays white for contrast */
 }
 
 .textHighlight {
-  color: #b3ba9b;
+  color: #4da8da; /* Light Blue for highlights */
   font-weight: 600;
 }
 
 .iconGroup div {
   flex: 1;
   padding: 10px;
-  border-left: 1px solid #ccc;
+  border-left: 1px solid #4da8da;
   transition: transform 0.3s, background-color 0.3s;
+  color: #4da8da;
 }
 
 .iconGroup div:first-child {
@@ -42,7 +52,7 @@
 }
 
 .iconGroup div:hover {
-  background-color: #f5f9f1;
+  background-color: #19354a; /* Slight blue hover */
 }
 
 .iconGroup div:hover svg {
@@ -81,7 +91,7 @@
   }
 
   .iconGroup div:not(:last-child) {
-    border-bottom: 1px solid #ccc;
+    border-bottom: 1px solid #4da8da;
   }
 
   .textHighlight {
@@ -93,7 +103,7 @@
 /* 768px and below */
 @media screen and (max-width: 768px) {
   .Main1 {
-    display: none; /* ✅ Hide image section on mobile */
+    display: none;
   }
 
   .About {
@@ -110,12 +120,12 @@
     flex: 0 0 45%;
     padding: 10px;
     border: none;
-    border-bottom: 1px solid #ccc;
+    border-bottom: 1px solid #4da8da;
     text-align: center;
   }
 
   .iconGroup div:nth-child(odd) {
-    border-right: 1px solid #ccc;
+    border-right: 1px solid #4da8da;
   }
 
   .iconGroup div:last-child {

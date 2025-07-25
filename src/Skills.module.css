@@ -1,6 +1,37 @@
-/* Skill.module.css */
-.Main {
-  width: 100%;
-  background-color: #f8f9fa;
+.skillsSection {
+  background-color: #0d1b2a;
+  color: #4da8da; 
+  padding: 3rem 1rem;
   min-height: 100vh;
+}
+
+
+.subHeading {
+  color: #4da8da; 
+  font-weight: bold;
+  font-size: 1rem;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+}
+
+
+.heading {
+  color: white;
+  font-size: 2.5rem;
+  font-weight: 700;
+}
+
+
+.description {
+  color: #4da8da; 
+  font-size: 1rem;
+}
+
+/* Card hover effect */
+.skillsSection .col {
+  transition: transform 0.3s ease-in-out;
+}
+
+.skillsSection .col:hover {
+  transform: translateY(-5px);
 }
