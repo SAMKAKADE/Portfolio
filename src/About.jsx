@@ -26,7 +26,7 @@ function About() {
 
                 {/* Content Section */}
                 <div className={`col-12 col-md-6 col-lg-6 d-flex flex-column justify-content-center ${styles.content}`}>
-                    <p className={`text-center fw-bold fs-5 ${styles.introText}`}>Sambhau</p>
+                    <p className={`text-center fw-bold fs-5 ${styles.introText}`}>MY INTRO</p>
                     <h2 className={`fw-bold mb-3 text-center ${styles.whiteText}`}>About Me</h2>
                     <p className={styles.whiteText}>
                         Hi, I'm Samarth Kakade, a BE Engineering graduate and passionate Full Stack Developer.
