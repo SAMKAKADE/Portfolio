@@ -27,7 +27,7 @@ function Resume() {
             <h6 className={styles.name}>Samarth Kakade</h6>
             <p><em className={styles.emphasis}>Hi, I'm Samarth Kakade, a BE Engineering graduate and passionate Full Stack Developer...</em></p>
             <ul className={styles.list}>
-              <li>Shrirampur, Maharashtra</li>
+              <li>Pune, Maharashtra</li>
               <li>+91-8767715551</li>
               <li>samarthkakade11@gmail.com</li>
             </ul>

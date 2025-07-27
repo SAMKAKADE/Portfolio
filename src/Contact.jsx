@@ -65,7 +65,7 @@ function Contact() {
                 <div className="ms-3">
                   <p className={`fw-bold m-0 ${styles.contactHeading}`}>Address:</p>
                   <p className={`${styles.contactText} m-0`}>
-                    Shrirampur, Maharashtra
+                    Pune, Maharashtra
                   </p>
                 </div>
               </div>

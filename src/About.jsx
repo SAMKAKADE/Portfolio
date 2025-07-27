@@ -37,7 +37,7 @@ function About() {
                     <address className={`mt-4 ${styles.whiteText}`}>
                         <p><strong>Name:</strong> <span className={styles.textHighlight}>Mr. Kakade Samarth Ramesh</span></p>
                         <p><strong>Date of Birth:</strong> <span className={styles.textHighlight}>July 07, 2004</span></p>
-                        <p><strong>Address:</strong> <span className={styles.textHighlight}>Shirasgaon, Shrirampur</span></p>
+                        <p><strong>Address:</strong> <span className={styles.textHighlight}>Pune, Maharashtra</span></p>
                         <p><strong>Zip code:</strong> <span className={styles.textHighlight}>413709</span></p>
                         <p><strong>Email:</strong> <span className={styles.textHighlight}>samarthkakade11@gmail.com</span></p>
                         <p><strong>Phone:</strong> <span className={styles.textHighlight}>+91-8767715551</span></p>

@@ -31,7 +31,7 @@ function MainSection() {
             <div className={styles.contactInfo}>
               <p><FaEnvelope /> samarthkakade11@email.com</p>
               <p><FaPhone /> +91 - 8767715551</p>
-              <p><FaMapMarkerAlt /> Shrirampur, Maharashtra</p>
+              <p><FaMapMarkerAlt /> Pune, Maharashtra</p>
             </div>
 
             <div className="mt-4 d-flex flex-wrap gap-3 justify-content-md-start justify-content-center">
