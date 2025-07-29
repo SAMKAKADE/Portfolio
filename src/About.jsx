@@ -1,5 +1,5 @@
 import styles from "./About.module.css";
-import img1 from "./images/About.png";
+import img1 from "./images/MainSection1.png";
 import { SiApplemusic } from "react-icons/si";
 import { MdOutlineTravelExplore, MdOutlineSportsCricket } from "react-icons/md";
 import { RiMovieAiFill } from "react-icons/ri";
